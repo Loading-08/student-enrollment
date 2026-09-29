@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Enrollment Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <h1>Student Enrollment Analysis</h1>
+  <p class="lead">Tick the courses each student takes. The page uses set operations to show who is in several courses, who is unique to one, and who is in none.</p>
+
+  <section>
+    <h2>Students and courses</h2>
+    <div class="row" style="margin-bottom:12px">
+      <input type="text" id="newName" placeholder="Student name" aria-label="Student name">
+      <button id="addBtn">Add student</button>
+      <button id="resetBtn" class="ghost" style="color:var(--mute)">Reset sample data</button>
+    </div>
+    <div class="scroll"><table id="table"></table></div>
+  </section>
+
+  <section>
+    <h2>Compare two courses</h2>
+    <div class="row" style="margin-bottom:14px">
+      <select id="selA" aria-label="Course A"></select>
+      <span>and</span>
+      <select id="selB" aria-label="Course B"></select>
+    </div>
+    <div class="grid" id="ops"></div>
+  </section>
+
+  <section>
+    <h2>Across all courses</h2>
+    <div class="grid" id="overall"></div>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

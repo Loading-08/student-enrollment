@@ -1,0 +1,26 @@
+:root { --bg:#f3f5f8; --card:#fff; --ink:#14213d; --mute:#5b6478; --line:#dde2ea; --a:#0f7b6c; --b:#c2410c; --chip:#e7f3f1; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Bricolage Grotesque',system-ui,sans-serif; line-height:1.5; }
+  main { max-width:960px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:clamp(1.8rem,5vw,2.8rem); font-weight:800; margin:0 0 4px; letter-spacing:-.02em; }
+  h2 { font-size:1.15rem; margin:0 0 12px; }
+  p.lead { color:var(--mute); margin:0 0 24px; max-width:60ch; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px; margin-bottom:16px; }
+  table { width:100%; border-collapse:collapse; font-size:.95rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+  td.c { text-align:center; }
+  input[type=text] { font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:6px; }
+  button, select { font:inherit; padding:8px 14px; border-radius:6px; border:1px solid var(--ink); background:var(--ink); color:#fff; cursor:pointer; }
+  select { background:#fff; color:var(--ink); border-color:var(--line); }
+  button.ghost { background:none; color:var(--b); border:none; padding:2px 6px; }
+  :focus-visible { outline:3px solid var(--a); outline-offset:2px; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px; }
+  .res { border:1px solid var(--line); border-radius:8px; padding:12px; }
+  .res h3 { margin:0; font-size:1rem; }
+  .res small { color:var(--mute); display:block; margin-bottom:8px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; min-height:28px; }
+  .chip { background:var(--chip); color:#0b5348; padding:2px 10px; border-radius:99px; font-size:.9rem; }
+  .chip.warn { background:#fdebdc; color:#8a3108; }
+  .empty { color:var(--mute); font-style:italic; }
+  .scroll { overflow-x:auto; }
